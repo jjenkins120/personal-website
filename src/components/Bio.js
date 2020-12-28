@@ -1,4 +1,4 @@
-import React from 'react' 
+import React from 'react'
 
 const Bio = () => {
   return (
@@ -7,5 +7,8 @@ const Bio = () => {
     </>
   )
 }
+
+
+
 
 export default Bio
