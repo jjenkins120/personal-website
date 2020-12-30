@@ -7,59 +7,15 @@ import { Grid, Image } from 'semantic-ui-react'
 import styled from 'styled-components'
 import image from './image.jpg'
 
-
-// const App = () => {
-//   return (
-//     <Grid divided='vertically'>
-//       <Grid.Row>
-//         <Contact/>
-//       </Grid.Row>
-//       <Grid.Row>
-//         <Image src={image} rounded style={styles.image}/>
-//         <Bio/>
-//       </Grid.Row>
-//       <Grid.Row>
-//         <ProjectsContainer/>
-//       </Grid.Row>
-//       <Grid.Row>
-//         <Resume/>
-//       </Grid.Row>
-//     </Grid> 
-//   )
-// }
-
-// const styles = {
-//   grid:{
-
-//   },
-//   contactRow: {
-
-//   },
-//   image: { 
-
-//   },
-//   bioRow: {
-//     display: 'flex'
-//   },
-//   projectsRow: {
-
-//   }, 
-//   resumeRow: {
-
-//   }
-// }
-
-
-
 const App = () => {
   return (
         <ContainerStyle>
-          <ContactStyle>
-            <Contact/>
-          </ContactStyle>
           <BioStyle>
             <Bio/>
           </BioStyle>  
+          <ContactStyle>
+            <Contact/>
+          </ContactStyle>
           <ProjectsStyle>  
             <ProjectsContainer/>
           </ProjectsStyle>
@@ -71,33 +27,62 @@ const App = () => {
 }
 
 const ContainerStyle = styled.div`
-  flex-direction: column;
-  height: 1500px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  border: solid;
 `
 
 const ContactStyle = styled.div`
-  text-align: center;
-  background-color: lime;
-  height: 375px;
+  flex: 1 1 150px; 
+  border: solid;
 `
 
 const BioStyle = styled.div`
-  background-image: url("${image}");
-  background-size: cover; 
-  text-align: center;
-  height: 1000px;
+  width: 100%;
+  height: 100vh; 
+  border: solid;
+  background-image: url(${image});
+  background-repeat: no-repeat;
+  background-size: cover;
 `
 
 const ProjectsStyle = styled.div`
-  text-align: center;
-  background-color: purple;
-  height: 375px;
+  flex: 1 1 150px; 
+  border: solid;
 `
 
 const ResumeStyle = styled.div`
-  text-align: center;
-  background-color: yellow;
-  height: 375px;
+  flex: 1 1 150px; 
+  border: solid;
 `
+// const ContainerStyle = styled.div`
+//   flex-direction: column;
+//   height: 1500px;
+// `
+
+// const ContactStyle = styled.div`
+//   text-align: center;
+//   background-color: lime;
+//   height: 375px;
+// `
+
+// const BioStyle = styled.div`
+//   background-image: url("${image}");
+//   background-size: cover; 
+//   text-align: center;
+//   height: 1000px;
+// `
+
+// const ProjectsStyle = styled.div`
+//   text-align: center;
+//   background-color: purple;
+//   height: 375px;
+// `
+
+// const ResumeStyle = styled.div`
+//   text-align: center;
+//   background-color: yellow;
+//   height: 375px;
+// `
 
 export default App
