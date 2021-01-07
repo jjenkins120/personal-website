@@ -3,9 +3,10 @@ import Project from '../components/Project'
 
 const ProjectsContainer = () => {
   return (
-    <>
+    <div>
       ProjectsContainer
-    </>
+      <Project/>
+    </div>
   )
 }
 

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { SocialIcon } from 'react-social-icons';
 
-const Bio = () => {
+const Header = () => {
   const [linkedColor, setLinkedColor] = useState('#ffffff')
   const [mediumColor, setMediumColor] = useState('#ffffff')
   const [gitColor, setGitColor] = useState('#ffffff')
@@ -15,21 +15,21 @@ const Bio = () => {
         <SocialIcon 
           url="https://www.linkedin.com/in/jeff-jenkins-a08b3b51/" 
           bgColor={linkedColor} 
-          onMouseEnter={() => setLinkedColor('#0000FF')} 
+          onMouseEnter={() => setLinkedColor('#CEE1F2')} 
           onMouseLeave={() => setLinkedColor('#FFFFFF')} 
           className='linkedin'
         />
         <SocialIcon 
           url="https://jjenkins120.medium.com/" 
           bgColor={mediumColor} 
-          onMouseEnter={() => setMediumColor('#0000FF')}
+          onMouseEnter={() => setMediumColor('#CEE1F2')}
           onMouseLeave={() => setMediumColor('#FFFFFF')}  
           className='medium'
         />
         <SocialIcon 
           url="https://github.com/jjenkins120" 
           bgColor={gitColor} 
-          onMouseEnter={() => setGitColor('#0000FF')}
+          onMouseEnter={() => setGitColor('#CEE1F2')}
           onMouseLeave={() => setGitColor('#FFFFFF')}  
           className='github'
         />
@@ -53,4 +53,4 @@ const Bio = () => {
 
 
 
-export default Bio
+export default Header

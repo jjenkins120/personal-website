@@ -8,7 +8,7 @@
   margin: 0 20px; */
 	display: inline-block;
   opacity: 1;
-  animation: fadeIn ease 5s;
+  animation: fadeIn ease 3s;
   position: relative;
   font-size : 7vw;
   overflow: hidden;
@@ -18,24 +18,24 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
   font-size : 2vw;
-  -webkit-animation: 4s ease 0s normal forwards 1 fadein;
-  animation: 4s ease 0s normal forwards 1 fadein;
+  -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+  animation: 3s ease 0s normal forwards 1 fadein;
   position: relative; 
 }
 
 .linkedin {
   animation: 5s ease 0s normal forwards 1 fadein;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .medium {
   animation: 5.5s ease 0s normal forwards 1 fadein;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .github {
   animation: 6s ease 0s normal forwards 1 fadein;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .container {
