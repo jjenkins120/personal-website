@@ -38,6 +38,18 @@
   margin-right: 11px;
 }
 
+.project-title {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+	display: inline-block;
+  /* opacity: 1;
+  position: relative; */
+  font-size : 7.5vw;
+  float: left;
+
+  /* overflow: hidden; */
+}
+
 .header-container {
   margin-left: 50%;
   text-align: center;
@@ -64,13 +76,26 @@
   margin: 5%;
 }
 
-.project-grid {
+/* .project-grid {
   display: grid;
   grid-gap: 8rem;
   grid-template-columns: repeat(auto-fit, minmax(150px, .5fr));
-  margin-bottom: 5%;
+  margin: 5%;
+  text-align: center;
+} */
+.project-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   text-align: center;
 }
+
+.project {
+  flex: 0 1 85%; 
+  margin: 10px;
+  border: solid;
+}
+
 
 @keyframes fadein{
   0% { opacity:0; }

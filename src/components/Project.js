@@ -2,9 +2,12 @@ import React, { useState } from 'react'
 import ReactPlayer from 'react-player'
 import { SocialIcon } from 'react-social-icons' 
 import SubText from './SubText'
+import ProjectTitle from '../components/ProjectTitle'
 
 const Project = ({ videoUrl, title, frontGitHubUrl, backGitHubUrl, gitHubUrl }) => {
   const [gitColor, setGitColor] = useState('#FFFFFF')
+  const [frontGitColor, setFrontGitColor] = useState('#FFFFFF')
+  const [backGitColor, setBackGitColor] = useState('#FFFFFF')
 
   const renderFrontBack = () => {
     if (gitHubUrl){
@@ -14,7 +17,8 @@ const Project = ({ videoUrl, title, frontGitHubUrl, backGitHubUrl, gitHubUrl }) 
             url={gitHubUrl}
             bgColor={gitColor} 
             onMouseEnter={() => setGitColor('#CEE1F2')}
-            onMouseLeave={() => setGitColor('#FFFFFF')}  
+            onMouseLeave={() => setGitColor('#FFFFFF')}
+            style={{ height: '5vw', width: '5vw', marginTop: '5%' }}
           />
         </>
       )
@@ -24,16 +28,18 @@ const Project = ({ videoUrl, title, frontGitHubUrl, backGitHubUrl, gitHubUrl }) 
           <h3>Frontend</h3>
           <SocialIcon 
               url={frontGitHubUrl}
-              bgColor={gitColor} 
-              onMouseEnter={() => setGitColor('#CEE1F2')}
-              onMouseLeave={() => setGitColor('#FFFFFF')}  
+              bgColor={frontGitColor} 
+              onMouseEnter={() => setFrontGitColor('#CEE1F2')}
+              onMouseLeave={() => setFrontGitColor('#FFFFFF')}
+              style={{ height: '5vw', width: '5vw'}}
             />
           <h3>Backend</h3>
           <SocialIcon 
               url={backGitHubUrl}
-              bgColor={gitColor} 
-              onMouseEnter={() => setGitColor('#CEE1F2')}
-              onMouseLeave={() => setGitColor('#FFFFFF')}  
+              bgColor={backGitColor} 
+              onMouseEnter={() => setBackGitColor('#CEE1F2')}
+              onMouseLeave={() => setBackGitColor('#FFFFFF')}
+              style={{ height: '5vw', width: '5vw'}}  
             />
         </>
       )
@@ -41,9 +47,9 @@ const Project = ({ videoUrl, title, frontGitHubUrl, backGitHubUrl, gitHubUrl }) 
   }
 
   return (
-    <div>
-      <ReactPlayer url={videoUrl} controls={true} width={'25vw'} height={'15vw'} style={{ marginBottom: '5px' }}/>
-      <SubText text={title}/>
+    <div className='project'>
+      <ReactPlayer url={videoUrl} controls={true} width={'100%'} height={'45vw'} style={{ marginBottom: '5px' }}/>
+      <ProjectTitle text={title}/> 
       {renderFrontBack()}
     </div>
   )
