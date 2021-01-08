@@ -8,7 +8,9 @@ import CompResume from '../comp-resume.pdf'
 const ResumeContainer = () => {
   return (
     <div>
-        <SectionTitle text='Resumes'/>
+        <div className='section-title'>
+            <SectionTitle text='Resumes'/>
+        </div>
         <Resume
             file={TechResume}
             title='Technical Resume'

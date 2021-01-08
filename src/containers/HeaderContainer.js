@@ -11,7 +11,7 @@ const HeaderContainer = () => {
 
   return (
     <div>
-      <div className='container'>
+      <div className='header-container'>
         <SectionTitle text='Jeff Jenkins'/>
         <SocialIcon 
           url="https://www.linkedin.com/in/jeff-jenkins-a08b3b51/" 

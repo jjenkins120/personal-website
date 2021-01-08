@@ -38,11 +38,38 @@
   margin-right: 11px;
 }
 
-.container {
+.header-container {
   margin-left: 50%;
   text-align: center;
   margin-top: 6%;
   margin-right: 4%;
+}
+
+.description-container {
+  text-align: center;
+  margin: 5%;
+}
+
+.image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+}
+
+.section-title {
+  text-align: center;
+  margin: 5%;
+}
+
+.project-grid {
+  display: grid;
+  grid-gap: 8rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, .5fr));
+  margin-bottom: 5%;
+  text-align: center;
 }
 
 @keyframes fadein{
