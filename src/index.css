@@ -10,14 +10,14 @@
   opacity: 1;
   animation: fadeIn ease 3s;
   position: relative;
-  font-size : 8vw;
+  font-size : 7.5vw;
   overflow: hidden;
 }
 
 .sub-text {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  font-size : 2vw;
+  font-size : 3vw;
   -webkit-animation: 3s ease 0s normal forwards 1 fadein;
   animation: 3s ease 0s normal forwards 1 fadein;
   position: relative; 
@@ -41,7 +41,7 @@
 .container {
   margin-left: 50%;
   text-align: center;
-  margin-top: 3%;
+  margin-top: 6%;
   margin-right: 4%;
 }
 

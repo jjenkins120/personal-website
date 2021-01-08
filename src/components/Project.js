@@ -42,7 +42,7 @@ const Project = ({ videoUrl, title, frontGitHubUrl, backGitHubUrl, gitHubUrl }) 
 
   return (
     <div>
-      <ReactPlayer url={videoUrl} controls={true} width={300} height={200} style={{ boxShadow: '2px 2px 2px gray'}}/>
+      <ReactPlayer url={videoUrl} controls={true} width={'30vw'} height={'20vw'} style={{ boxShadow: '2px 2px 2px gray'}}/>
       <SubText text={title}/>
       {renderFrontBack()}
     </div>
