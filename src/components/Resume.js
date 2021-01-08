@@ -1,13 +1,16 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react' 
+import { Icon } from 'semantic-ui-react'
+import SubText from './SubText'
+import { Document } from 'react-pdf'
 
-const Resume = () => {
+const Resume = ({file, title}) => {
   return (
     <div>
-      Resume
-      <Icon name= 'wordpress forms'>Technical Resume: https://docs.google.com/document/d/1b1IWOxckPE-WS_VZWHd7YD1x7oFenylOjoWw-siLZFA/edit?usp=sharing</Icon>
-      <br/>
-      <Icon name= 'wordpress forms'>Extended Resume: https://docs.google.com/document/d/10iPRXHTdWrNwhwwl2dRZjQeVpN8ze3RBJEQMAlbjWA8/edit?usp=sharing</Icon>
+      <SubText text={title}/>
+      <Document 
+        file={file}
+      />
+      {/* <h3>{url}</h3> */}
     </div>
   )
 }

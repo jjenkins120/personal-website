@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { SocialIcon } from 'react-social-icons';
+import SectionTitle from '../components/SectionTitle'
 
-const Header = () => {
+const HeaderContainer = () => {
   const [linkedColor, setLinkedColor] = useState('#ffffff')
   const [mediumColor, setMediumColor] = useState('#ffffff')
   const [gitColor, setGitColor] = useState('#ffffff')
@@ -11,7 +12,7 @@ const Header = () => {
   return (
     <div>
       <div className='container'>
-        <h1 className='name'>Jeff Jenkins</h1>
+        <SectionTitle text='Jeff Jenkins'/>
         <SocialIcon 
           url="https://www.linkedin.com/in/jeff-jenkins-a08b3b51/" 
           bgColor={linkedColor} 
@@ -53,4 +54,4 @@ const Header = () => {
 
 
 
-export default Header
+export default HeaderContainer

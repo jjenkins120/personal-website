@@ -1,8 +1,8 @@
 import React from 'react' 
-import AboutMe from './components/AboutMe'
-import Header from './components/Header'
+import AboutMeContainer from './containers/AboutMeContainer'
+import HeaderContainer from './containers/HeaderContainer'
 import ProjectsContainer from './containers/ProjectsContainer'
-import Resume from './components/Resume'
+import ResumeContainer from './containers/ResumeContainer'
 import { Grid, Image } from 'semantic-ui-react'
 import styled from 'styled-components'
 import image from './image.jpg'
@@ -11,16 +11,16 @@ const App = () => {
   return (
         <ContainerStyle>
           <HeaderStyle>
-            <Header/>
+            <HeaderContainer/>
           </HeaderStyle>  
           <AboutMeStyle>
-            <AboutMe/>
+            <AboutMeContainer/>
           </AboutMeStyle>
           <ProjectsStyle>  
             <ProjectsContainer/>
           </ProjectsStyle>
           <ResumeStyle>
-            <Resume/>
+            <ResumeContainer/>
           </ResumeStyle>
         </ContainerStyle>
   )

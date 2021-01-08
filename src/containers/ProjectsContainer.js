@@ -1,10 +1,11 @@
 import React from 'react' 
 import Project from '../components/Project'
+import SectionTitle from '../components/SectionTitle'
 
 const ProjectsContainer = () => {
   return (
     <div>
-      ProjectsContainer
+      <SectionTitle text='Projects'/>
       <Project 
         title='Muse'
         videoUrl={'https://youtu.be/stl8TwQoS98'}
