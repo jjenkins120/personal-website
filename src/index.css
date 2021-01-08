@@ -10,7 +10,7 @@
   opacity: 1;
   animation: fadeIn ease 3s;
   position: relative;
-  font-size : 7vw;
+  font-size : 8vw;
   overflow: hidden;
 }
 
@@ -41,8 +41,8 @@
 .container {
   margin-left: 50%;
   text-align: center;
-  margin-top: 10%;
-  margin-right: 5%;
+  margin-top: 3%;
+  margin-right: 4%;
 }
 
 @keyframes fadein{
