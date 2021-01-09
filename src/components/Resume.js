@@ -1,7 +1,7 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
+
 import SubText from './SubText'
-import { Document } from 'react-pdf'
+import { Document, Page } from 'react-pdf'
 
 const Resume = ({file, title}) => {
   return (
@@ -10,6 +10,7 @@ const Resume = ({file, title}) => {
       <Document 
         file={file}
       />
+        
       {/* <h3>{url}</h3> */}
     </div>
   )

@@ -3,9 +3,6 @@
 .name {
   font-family: 'Montserrat', sans-serif;
   color: white;
-  /* font-size: 100px; 
-  float: right;
-  margin: 0 20px; */
 	display: inline-block;
   opacity: 1;
   animation: fadeIn ease 3s;
@@ -42,12 +39,11 @@
   font-family: 'Montserrat', sans-serif;
   color: white;
 	display: inline-block;
-  /* opacity: 1;
-  position: relative; */
-  font-size : 7.5vw;
-  float: left;
+  font-size: 8vw;
+}
 
-  /* overflow: hidden; */
+.project-title:hover {
+  color: #CEE1F2;
 }
 
 .header-container {
@@ -92,8 +88,13 @@
 
 .project {
   flex: 0 1 85%; 
-  margin: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  /* margin-right: 10px; */
   border: solid;
+  background-color: black;
+  border-radius: 8px;
 }
 
 

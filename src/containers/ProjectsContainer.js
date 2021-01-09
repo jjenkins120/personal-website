@@ -12,8 +12,8 @@ const ProjectsContainer = () => {
         <Project 
           title='Muse'
           videoUrl={'https://youtu.be/stl8TwQoS98'}
-          frontGitHubUrl={'https://github.com/jjenkins120/muse-frontend'}
-          backGitHubUrl={'https://github.com/jjenkins120/muse-backend'}
+          gitHubUrl={'https://github.com/jjenkins120/muse-frontend'}
+          // backGitHubUrl={'https://github.com/jjenkins120/muse-backend'}
         />
         <Project 
           title='Veggie Delight'
@@ -23,8 +23,8 @@ const ProjectsContainer = () => {
         <Project 
           title='To-Do'
           videoUrl={'https://youtu.be/J8zXyZMGXNs'}
-          frontGitHubUrl={'https://github.com/jjenkins120/to-do-frontend'}
-          backGitHubUrl={'https://github.com/jjenkins120/to-do-backend'}
+          gitHubUrl={'https://github.com/jjenkins120/to-do-frontend'}
+          // backGitHubUrl={'https://github.com/jjenkins120/to-do-backend'}
         />
         <Project 
           title='KJ Cafe'
