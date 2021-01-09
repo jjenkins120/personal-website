@@ -20,6 +20,22 @@
   position: relative; 
 }
 
+.skill {
+  font-family: 'Montserrat', sans-serif;
+  color: gray;
+  font-size : 3vw;
+  position: relative; 
+}
+
+.skill-container {
+  background-color: white;
+  border: solid white;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  margin-top: 30px;
+}
+
 .linkedin {
   animation: 5s ease 0s normal forwards 1 fadein;
   margin-right: 11px;
@@ -65,6 +81,7 @@
   width: 50%;
   max-width: 400px;
   height: auto;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
 }
 
 .section-title {
@@ -95,6 +112,7 @@
   border: solid;
   background-color: black;
   border-radius: 8px;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
 }
 
 .resume-grid {
@@ -108,10 +126,22 @@
   flex: 0 1 45%; 
   margin-bottom: 50px;
   border: solid;
-  background-color: blue;
   border-radius: 8px;
+  border-color: white;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
 } 
 
+/* .resume-controls {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background: white;
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity ease-in-out 0.2s;
+  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
+  border-radius: 4px;
+}  */
 
 @keyframes fadein{
   0% { opacity:0; }

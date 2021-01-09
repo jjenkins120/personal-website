@@ -40,13 +40,12 @@ const HeaderStyle = styled.div`
 `
 const AboutMeStyle = styled.div`
   flex: 1 1 150px;
-  background-color: purple; 
+  background-color: purple;
 `
 const ProjectsStyle = styled.div`
   flex: 1 1 150px;
   background-color: green;  
 `
-
 const ResumeStyle = styled.div`
   flex: 1 1 150px;
   background-color: yellow;   

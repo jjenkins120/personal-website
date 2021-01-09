@@ -19,9 +19,30 @@ const Resume = ({file, title}) => {
       return (
         <div>  
           <Icon name='minus' onClick={() => minusPage()}/>
-          {pageNumber} of {numPages}
-          <Icon name='plus'onClick={() => plusPage()}/>
+          {pageNumber} of {numPages} 
+          <Icon name='plus'onClick={() => plusPage()}/><br/>
+          <Icon 
+            name='search minus' 
+            onClick={() => setScale(scale - 0.1)}
+          />
+          <Icon 
+            name='magnify' 
+            onClick={() => setScale(scale + 0.1)}
+          />
         </div>
+      )
+    } else {
+      return (
+        <div>  
+          <Icon 
+            name='search minus' 
+            onClick={() => setScale(scale - 0.1)}
+          />
+          <Icon 
+            name='magnify' 
+            onClick={() => setScale(scale + 0.1)}
+          />
+        </div>  
       )
     }
   }
@@ -39,28 +60,22 @@ const Resume = ({file, title}) => {
   }
 
   return (
-    <div className='resume'>
+    <div >
       <SubText text={title}/>
       <Document
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}
         loading='Loading...'
+        className='resume'
       >
         <Page 
           pageNumber={pageNumber} 
           width='500'
           scale={scale}
         />
-      </Document>
-      <Icon 
-        name='search minus' 
-        onClick={() => setScale(scale - 0.1)}
-      />
-      <Icon 
-        name='magnify' 
-        onClick={() => setScale(scale + 0.1)}
-      />
       {displayPages()}
+      </Document>
+      
     </div>
   );
 }
