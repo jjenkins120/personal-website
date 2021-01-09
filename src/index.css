@@ -97,6 +97,21 @@
   border-radius: 8px;
 }
 
+.resume-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.resume {
+  flex: 0 1 45%; 
+  margin-bottom: 50px;
+  border: solid;
+  background-color: blue;
+  border-radius: 8px;
+} 
+
 
 @keyframes fadein{
   0% { opacity:0; }

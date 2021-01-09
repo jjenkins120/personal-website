@@ -11,6 +11,7 @@ const ResumeContainer = () => {
         <div className='section-title'>
             <SectionTitle text='Resumes'/>
         </div>
+        <div className='resume-grid'>
         <Resume
             file={TechResume}
             title='Technical Resume'
@@ -19,6 +20,7 @@ const ResumeContainer = () => {
             file={CompResume}
             title='Comprehensive Resume'
         />
+        </div>
     </div>
   )
 }
