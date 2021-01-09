@@ -109,10 +109,6 @@
   margin-right: 10px;
   margin-bottom: 50px;
   /* margin-right: 10px; */
-  border: solid;
-  background-color: black;
-  border-radius: 8px;
-  box-shadow: 0 30px 40px 0 rgba(16, 36, 94, 0.2);
 }
 
 .resume-grid {

@@ -6,7 +6,7 @@ const Project = ({ videoUrl, title, gitHubUrl }) => {
 
   return (
     <div className='project'>
-      <ReactPlayer url={videoUrl} controls={true} width={'100%'} height={'45vw'} style={{ marginBottom: '5px' }}/>
+      <ReactPlayer url={videoUrl} controls={true} width={'100%'} height={'45vw'} style={{ marginBottom: '5px', boxShadow: '0 30px 40px 0 rgba(16, 36, 94, 0.25)', border: 'solid 3px', borderRadius: '12px' }}/>
       <ProjectTitle text={title} linkUrl={gitHubUrl}/> 
     </div>
   )

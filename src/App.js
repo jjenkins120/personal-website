@@ -5,7 +5,8 @@ import ProjectsContainer from './containers/ProjectsContainer'
 import ResumeContainer from './containers/ResumeContainer'
 import { Grid, Image } from 'semantic-ui-react'
 import styled from 'styled-components'
-import image from './image.jpg'
+import nzImage from './nz-image.jpg'
+
 
 const App = () => {
   return (
@@ -33,7 +34,7 @@ const ContainerStyle = styled.div`
 const HeaderStyle = styled.div`
   width: 100%;
   height: 100vh; 
-  background-image: url(${image});
+  background-image: url(${nzImage});
   background-repeat: no-repeat;
   background-size: cover;
   position: static;
@@ -44,11 +45,11 @@ const AboutMeStyle = styled.div`
 `
 const ProjectsStyle = styled.div`
   flex: 1 1 150px;
-  background-color: green;  
-`
-const ResumeStyle = styled.div`
-  flex: 1 1 150px;
-  background-color: yellow;   
+  background-color: pink;
+  `
+  const ResumeStyle = styled.div`
+  flex: 1 1 150px; 
+  background-color: yellow;  
 `
 // const ContainerStyle = styled.div`
 //   flex-direction: column;
