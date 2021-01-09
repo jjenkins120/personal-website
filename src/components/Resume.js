@@ -48,7 +48,7 @@ const Resume = ({file, title}) => {
   }
 
   const plusPage = () => {
-    if (pageNumber <= numPages){
+    if (pageNumber < numPages){
       setPageNumber(pageNumber + 1)
     }
   }
