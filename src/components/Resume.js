@@ -17,7 +17,7 @@ const Resume = ({file, title}) => {
   const displayPages = () => {
     if (numPages > 1){
       return (
-        <div>  
+        <div className='resume-controls'>  
           <Icon name='minus' onClick={() => minusPage()}/>
           {pageNumber} of {numPages} 
           <Icon name='plus'onClick={() => plusPage()}/><br/>
