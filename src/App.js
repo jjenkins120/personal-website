@@ -3,11 +3,8 @@ import AboutMeContainer from './containers/AboutMeContainer'
 import HeaderContainer from './containers/HeaderContainer'
 import ProjectsContainer from './containers/ProjectsContainer'
 import ResumeContainer from './containers/ResumeContainer'
-import { Grid, Image } from 'semantic-ui-react'
 import styled from 'styled-components'
 import nzImage from './nz-image.jpg'
-
-
 
 const App = () => {
   return (
@@ -47,40 +44,9 @@ const AboutMeStyle = styled.div`
 const ProjectsStyle = styled.div`
   flex: 1 1 150px;
   background-color: #36454f;
-  
-  `
+`
   const ResumeStyle = styled.div`
   flex: 1 1 150px; 
-  background-color: #FFD400;  
+  background-color: #FFDD3C;  
 `
-// const ContainerStyle = styled.div`
-//   flex-direction: column;
-//   height: 1500px;
-// `
-
-// const ContactStyle = styled.div`
-//   text-align: center;
-//   background-color: lime;
-//   height: 375px;
-// `
-
-// const BioStyle = styled.div`
-//   background-image: url("${image}");
-//   background-size: cover; 
-//   text-align: center;
-//   height: 1000px;
-// `
-
-// const ProjectsStyle = styled.div`
-//   text-align: center;
-//   background-color: purple;
-//   height: 375px;
-// `
-
-// const ResumeStyle = styled.div`
-//   text-align: center;
-//   background-color: yellow;
-//   height: 375px;
-// `
-
 export default App

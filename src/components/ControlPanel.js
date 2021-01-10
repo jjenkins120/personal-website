@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { Icon } from 'semantic-ui-react'
+import React from 'react'
 
 const ControlPanel = ({ displayPages }) => {
     return (

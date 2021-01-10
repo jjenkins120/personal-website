@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
 import { SocialIcon } from 'react-social-icons';
 import SectionTitle from '../components/SectionTitle'
 

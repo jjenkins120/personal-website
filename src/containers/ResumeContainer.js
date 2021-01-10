@@ -1,5 +1,4 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
 import Resume from '../components/Resume'
 import SectionTitle from '../components/SectionTitle'
 import TechResume from '../tech-resume.pdf' 
