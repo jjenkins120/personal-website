@@ -17,7 +17,7 @@ const ResumeContainer = () => {
         />
         <Resume
             file={CompResume}
-            title='Comprehensive Resume'
+            title='Complete Resume'
         />
         </div>
     </div>
