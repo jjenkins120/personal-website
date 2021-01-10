@@ -7,7 +7,7 @@ import Skill from '../components/Skill'
 
 const AboutMeContainer = () => {
 
-  const description = "I am an aspiring software engineer passionate about building scalable, modular code for web and mobile applications. I have a background in international development, higher education, and international education. My long list of interests include, but aren't limited to, science, education, bourbon, basketball, politics, urban farming, and exercise."
+  const description = "I am an aspiring software engineer passionate about building scalable, modular code for web and mobile applications. I have a background in international development, higher education, and international education. My long list of interests include, but aren't limited to, science, education, bourbon, basketball, politics, and urban farming. My skills include:"
 
   const skills ="React, React Native, Redux, Javascript, Rails, Ruby, Git, HTML, CSS, Semantic UI, Bootstrap"
 

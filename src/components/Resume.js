@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import SubText from './SubText'
 import { Icon } from 'semantic-ui-react'
 import { Document, Page } from 'react-pdf'
+import ControlPanel from './ControlPanel'
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -18,32 +19,54 @@ const Resume = ({file, title}) => {
     if (numPages > 1){
       return (
         <div className='resume-controls'>  
-          <Icon name='minus' onClick={() => minusPage()}/>
-          {pageNumber} of {numPages} 
-          <Icon name='plus'onClick={() => plusPage()}/><br/>
           <Icon 
             name='search minus' 
-            onClick={() => setScale(scale - 0.1)}
+            onClick={minusScale}
+            style={{marginRight: '10px'}}
+          />
+          <Icon 
+            name='minus' 
+            onClick={minusPage}
+            style={{marginRight: '10px'}}
+          />
+          {pageNumber}&nbsp; of &nbsp;{numPages} 
+          <Icon 
+            name='plus'
+            onClick={plusPage}
+            style={{marginRight: '10px', marginLeft: '10px'}}
           />
           <Icon 
             name='magnify' 
-            onClick={() => setScale(scale + 0.1)}
+            onClick={plusScale}
           />
         </div>
       )
     } else {
       return (
-        <div>  
+        <div className='resume-controls'>  
           <Icon 
             name='search minus' 
-            onClick={() => setScale(scale - 0.1)}
+            onClick={minusScale}
+            style={{marginRight: '10px'}}
           />
           <Icon 
             name='magnify' 
-            onClick={() => setScale(scale + 0.1)}
+            onClick={plusScale}
           />
         </div>  
       )
+    }
+  }
+
+  const plusScale = () => {
+    if (scale < 2){
+      setScale(scale + 0.1)
+    }
+  }
+
+  const minusScale = () => {
+    if (scale > 1){
+      setScale(scale - 0.1)
     }
   }
 
@@ -60,8 +83,9 @@ const Resume = ({file, title}) => {
   }
 
   return (
-    <div >
+    <div>
       <SubText text={title}/>
+      <ControlPanel displayPages={displayPages}/>
       <Document
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}
@@ -73,9 +97,8 @@ const Resume = ({file, title}) => {
           width='500'
           scale={scale}
         />
-      {displayPages()}
       </Document>
-      
+    
     </div>
   );
 }

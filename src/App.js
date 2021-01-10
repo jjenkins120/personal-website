@@ -8,6 +8,7 @@ import styled from 'styled-components'
 import nzImage from './nz-image.jpg'
 
 
+
 const App = () => {
   return (
         <ContainerStyle>
@@ -41,15 +42,16 @@ const HeaderStyle = styled.div`
 `
 const AboutMeStyle = styled.div`
   flex: 1 1 150px;
-  background-color: purple;
+  background-color: #FAB78E;
 `
 const ProjectsStyle = styled.div`
   flex: 1 1 150px;
-  background-color: pink;
+  background-color: #36454f;
+  
   `
   const ResumeStyle = styled.div`
   flex: 1 1 150px; 
-  background-color: yellow;  
+  background-color: #FFD400;  
 `
 // const ContainerStyle = styled.div`
 //   flex-direction: column;

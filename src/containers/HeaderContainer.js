@@ -7,6 +7,8 @@ const HeaderContainer = () => {
   const [linkedColor, setLinkedColor] = useState('#ffffff')
   const [mediumColor, setMediumColor] = useState('#ffffff')
   const [gitColor, setGitColor] = useState('#ffffff')
+  const [phoneColor, setPhoneColor] = useState('#ffffff')
+  const [emailColor, setEmailColor] = useState('#ffffff')
 
 
   return (
@@ -34,7 +36,25 @@ const HeaderContainer = () => {
           onMouseLeave={() => setGitColor('#FFFFFF')}  
           className='github'
         />
-        <h3 className='sub-text'>jjenkins120@gmail.com<br/>305.968.1809</h3>
+        <h3 className='sub-text'>
+          <a
+            href='mailto:jjenkins120@gmail.com'
+            style={{color: emailColor}} 
+            onMouseEnter={() => setEmailColor('#CEE1F2')} 
+            onMouseLeave={() => setEmailColor('#FFFFFF')}  
+          >
+            jjenkins120@gmail.com
+          </a>
+          <br/>
+          <a 
+            href='tel:305-968-1809' 
+            style={{color: phoneColor}} 
+            onMouseEnter={() => setPhoneColor('#CEE1F2')} 
+            onMouseLeave={() => setPhoneColor('#FFFFFF')} 
+          >
+            305.968.1809
+          </a>
+        </h3>
       </div>
       <br/>
       <br/>
