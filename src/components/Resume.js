@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
+// import React, { useState } from 'react'
 import SubText from './SubText'
-import { Icon } from 'semantic-ui-react'
-import { Document, Page } from 'react-pdf'
-import ControlPanel from './ControlPanel'
+// import { Icon } from 'semantic-ui-react'
+// import { Document, Page } from 'react-pdf'
+// import ControlPanel from './ControlPanel'
 import { pdfjs } from 'react-pdf';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
