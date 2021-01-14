@@ -1,9 +1,9 @@
 import React from 'react'
 
-const ControlPanel = ({ displayPages }) => {
+const ControlPanel = ({ displayPages, file }) => {
     return (
         <>
-        {displayPages()}
+        {displayPages(file)}
         </>
     )
 }
