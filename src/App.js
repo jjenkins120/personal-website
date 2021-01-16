@@ -47,6 +47,6 @@ const ProjectsStyle = styled.div`
 `
   const ResumeStyle = styled.div`
   flex: 1 1 150px; 
-  background-color: #b5e7a0;  
+  background-color: #83D475;  
 `
 export default App

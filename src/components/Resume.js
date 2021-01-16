@@ -43,6 +43,17 @@ const Resume = ({file, title}) => {
             size='large'  
             onClick={plusScale}
           />
+          <a
+            href={file}
+            download
+          >
+            <Icon 
+              name='download'
+              size='large'
+              color='black'
+              style={{ marginLeft: '30px'}}
+            />
+          </a>
         </div>
       )
     } else {
@@ -59,6 +70,17 @@ const Resume = ({file, title}) => {
             size='large'  
             onClick={plusScale}
           />
+          <a
+            href={file}
+            download
+          >
+            <Icon 
+              name='download'
+              size='large'
+              color='black'
+              style={{ marginLeft: '90px'}}
+            />
+          </a>
         </div>  
       )
     }
